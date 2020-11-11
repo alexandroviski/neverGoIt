@@ -47,10 +47,10 @@ func lerTexto(pathFile string) ([]string, error) {
 
 // funcao pra enviar o email usando api do google
 func SendEmail(userEmail string, msg []byte) error {
-	auth := smtp.PlainAuth("", "harakirisekaini@gmail.com", "orvnaliafxsufznh", "smtp.gmail.com")
+	auth := smtp.PlainAuth("", "<o seu gmail>", "<seu codigo de seguranca>", "smtp.gmail.com")
 	// Here we do it all: connect to our server, set up a message and send it
 	to := []string{userEmail}
-	err := smtp.SendMail("smtp.gmail.com:587", auth, "harakirisekaini@gmail.com", to, msg)
+	err := smtp.SendMail("smtp.gmail.com:587", auth, "<o seu gmail de novo>", to, msg)
 	if err != nil {
 		return err
 	}
