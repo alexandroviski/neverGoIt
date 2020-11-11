@@ -19,7 +19,7 @@ func main() {
 
 	sb := []byte(s)
 
-	SendEmail("Mrkevinregis@gmail.com", sb)
+	SendEmail("<email de destino>", sb)
 
 }
 
